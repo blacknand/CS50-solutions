@@ -1,5 +1,0 @@
-SELECT name
-FROM songs;
-
-
-
