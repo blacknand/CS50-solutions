@@ -1,0 +1,280 @@
+body,
+html {
+    width: 100%;
+    background-color: black;
+}
+
+.image-containers {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+}
+
+.image-single-bb,
+.image-single-bcs,
+.image-single-sopranos {
+    width: 33.33%;
+    overflow: hidden;
+}
+
+.image-single-bcs img {
+    object-fit: cover;
+    object-position: 10%;
+}
+
+.bcs-container {
+    position: relative;
+    width: 100vw;
+    margin-top: 2.5%;
+}
+
+.content-container {
+    position: relative;
+    width: 80%;
+    right: -10%;
+}
+
+.bcs-img {
+    display: inline-flex;
+    position: relative;
+    width: 22.5vw;
+    height: 80vh;
+}
+
+.bcs-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.bcs-titles {
+    display: inline-flex;
+    color: white;
+    position: absolute;
+    top: 0%;
+    width: 80%;
+    align-items: center;
+    right: -10%;
+}
+
+.bcs-titles h1 {
+    position: absolute;
+    top: -2%;
+}
+
+.bcs-info {
+    display: inline-flex;
+    position: relative;
+    color: white;
+    top: -50%;
+}
+
+.rating-info,
+.rating-info-a {
+    position: relative;
+    display: flex;
+}
+
+.bcs-rating {
+    position: relative;
+    right: -25%;
+}
+
+.bb-rating {
+    position: relative;
+    right: -30%;
+}
+
+.bcs-info {
+    display: inline-flex;
+    position: absolute;
+    top: 8.5%;
+    right: 52.5%;
+    width: 17.5%;
+    gap: 2.5%;
+}
+
+.text-box {
+    display: inline-flex;
+    position: absolute;
+    width: 46.75%;
+    top: 12.5%;
+    right: 23.25%;
+    color: white;
+}
+
+@media only screen and (max-width: 1750px) {
+    .bcs-rating {
+        right: -27.5%;
+    }
+    
+    .bb-rating {
+        right: -32.5%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .bb-rating {
+        right: -32.5%;
+    }
+
+    .bcs-rating {
+        right: -30%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .text-box {
+        right: 15.25%;
+    }
+
+    .bcs-titles {
+        right: 12%;
+        width: 50%;
+    }
+
+    .bcs-info {
+        right: 44.5%;
+    }
+
+    .bcs-img {
+        width: 25vw;
+        left: -2.5%;
+    }
+
+    .bb-rating {
+        right: -55%;
+    }
+
+    .bcs-rating {
+        right: -50%;
+    }
+}
+
+@media only screen and (max-width: 1463px) {
+    .bcs-info {
+        width: 20%;
+        right: 42%;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .bcs-rating {
+        display: none;
+    }
+
+    .bb-rating {
+        right: -60%;
+    }
+
+    .bcs-img {
+        width: 27.5vw;
+    }
+}
+
+@media only screen and (max-width: 1344px) {
+    .bcs-titles h1 {
+        width: 100%;
+        position: absolute;
+        top: 5%;
+    }
+
+    .bcs-rating h4,
+    .rating-info {
+        position: relative;
+        right: -170%;
+    }
+
+    .bb-rating h4,
+    .rating-info-a {
+        position: relative;
+        right: -10%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .bcs-info {
+        width: 30%;
+        right: 32%;
+    }
+
+    .bb-rating {
+        right: -60%;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .bcs-img {
+        width: 27vw;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .bcs-img {
+        position: relative;
+        width: 30vw;
+        left: -5%;
+    }
+
+    .bb-rating {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 950px) {
+    .bcs-img {
+        display: none;
+    }
+
+    .bb-rating {
+        display: none;
+    }
+
+    .bcs-info {
+        position: relative;
+        right: -41%;
+        top: 5vh;
+    }
+
+    .text-box {
+        display: flex;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        right: -1.5%;
+        top: 15vh;
+    }
+}
+
+@media only screen and (max-width: 853px) {
+    .bcs-info {
+        display: none;
+    }
+
+    .bcs-titles {
+        position: relative;
+        top: 5vh;
+        right: -35%;
+    }
+}
+
+@media only screen and (max-width: 496px) {
+    .bcs-titles {
+        width: 55%;
+        right: -30%;
+    }
+}
+
+@media only screen and (max-width: 437px) {
+    .bcs-titles {
+        width: 57.5%;
+        right: -25%;
+    }
+
+    .text-box {
+        position: relative;
+        right: -5%;
+    }
+}

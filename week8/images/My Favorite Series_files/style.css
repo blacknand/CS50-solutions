@@ -1,0 +1,22 @@
+body,
+html {
+    width: 100%;
+}
+
+.image-containers {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+}
+
+.image-single-bb,
+.image-single-bcs,
+.image-single-sopranos {
+    width: 33.33%;
+    overflow: hidden;
+}
+
+.image-single-bcs {
+    object-position: 10%;
+}

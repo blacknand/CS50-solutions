@@ -1,0 +1,52 @@
+body,
+html {
+    width: 100%;
+    background-color: black;
+}
+
+.image-containers {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+}
+
+.image-single-bb,
+.image-single-bcs,
+.image-single-sopranos {
+    width: 33.33%;
+    overflow: hidden;
+}
+
+.image-single-bcs img {
+    object-fit: cover;
+    object-position: 10%;
+}
+
+.bcs-container {
+    position: relative;
+}
+
+.bcs-img {
+    display: inline-flex;
+    position: relative;
+    width: 22.5vw;
+    height: 80vh;
+}
+
+.bcs-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.bcs-titles {
+    display: inline-flex;
+    color: white;
+    position: absolute;
+    top: 0%;
+}
+
+.bcs-info {
+    display: inline-flex;
+    color: white;
+}
