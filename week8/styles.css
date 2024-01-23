@@ -1,26 +1,51 @@
 body,
 html {
     width: 100%;
+    height: 100vh;
     background-color: black;
+    overflow: hidden;
 }
 
 .image-containers {
-    display: flex;
+    display: inline-flex;
     position: relative;
     width: 100vw;
-    height: 90vh;
+    height: 93.5vh;
+    top: -6.5vh;
+}
+
+.main-title {
+    display: inline-flex;
+    position: relative;
+    top: 30vh;
+    right: -42vw;
+    z-index: 10;
+    color: white;
 }
 
 .image-single-bb,
 .image-single-bcs,
 .image-single-sopranos {
     width: 33.33%;
-    overflow: hidden;
 }
 
-.image-single-bcs img {
-    object-fit: cover;
-    object-position: 10%;
+.image-single-bb {
+    background-image: url('images/MV5BMTJiMzgwZTktYzZhZC00YzhhLWEzZDUtMGM2NTE4MzQ4NGFmXkEyXkFqcGdeQWpybA@@._V1_.jpg');
+    background-size: cover;
+    background-position: 55% 50%;
+}
+
+.image-single-sopranos {
+    background-image: url('images/sopranos.jpg');
+    background-size: cover;
+    background-position: 55% 50%;
+
+}
+
+.image-single-bcs {
+    background-image: url('images/bettercallsaul_041816-h_2016.webp');
+    background-size: cover;
+    background-position: 32.5% 50%;
 }
 
 .bcs-container {
@@ -103,6 +128,28 @@ html {
     color: white;
 }
 
+.bb-img {
+    background-image: url('images/bb.jpg');
+    width: 20vw;
+    height: 72vh;
+    /* Use the following to adjust the image inside of itself */
+    /* background-size: cover;
+    background-position: 50% 50%;  */
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    text-decoration: underline !important;
+}
+
+.sp-img {
+    background-image: url('images/sopranos.jpg');
+    position: relative;
+    width: 20vw;
+    height: 75vh;
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+
 @media only screen and (max-width: 1750px) {
     .bcs-rating {
         right: -27.5%;
@@ -149,12 +196,57 @@ html {
     .bcs-rating {
         right: -50%;
     }
+
+    .bb-img {
+        position: relative;
+        right: 2.5%;
+        width: 25vw;
+    }
+
+    .sp-img {
+        width: 25vw;
+    }
 }
 
 @media only screen and (max-width: 1463px) {
     .bcs-info {
         width: 20%;
         right: 42%;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .image-single-bb {
+        background-position: 80% 50%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .main-title h1 {
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .main-title h1 {
+        display: none;
+    }
+
+    .image-containers {
+        display: grid;
+        width: 100%;
+        position: relative;
+        top: -2.5vh;
+    }
+
+    .image-single-bb,
+    .image-single-bcs,
+    .image-single-sopranos {
+        width: 100vw;
+    }
+
+    .image-single-bb {
+        background-position: 50% 0%;
     }
 }
 
@@ -203,6 +295,13 @@ html {
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .bb-img {
+        background-size: cover;
+        background-position: 15% 50%;
+    }
+}
+
 @media only screen and (max-width: 1130px) {
     .bcs-img {
         width: 27vw;
@@ -246,6 +345,23 @@ html {
         right: -1.5%;
         top: 15vh;
     }
+
+    .sp-info {
+        top: 6vh;
+    }
+
+    .bb-img {
+        display: none;
+    }
+
+    .bb-info {
+        right: -38%;
+        top: 7.5vh;
+    }
+
+    .sp-img {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 853px) {
@@ -278,3 +394,4 @@ html {
         right: -5%;
     }
 }
+
