@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    The current price of
+    {{ result["symbol"] }}
+    is worth
+    {{ price | usd}}
+{% endblock %}

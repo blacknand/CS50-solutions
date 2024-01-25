@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="../static/styles.css">
+    <div style="display: flex; gap: 1rem;">
+        <table>
+            <tr>
+                <th>Transaction Type</th>
+                <th>Stock</th>
+                <th>Price</th>
+                <th>Date and Time</th>
+                <th>Shares</th>
+            </tr>
+            {% for stock in stock_history %}
+                <tr>
+                    <td>{{ stock["transaction_type"] }}</td>
+                    <td>{{ stock["stock"] }}</td>
+                    <td>{{ stock["price"] | usd }}</td>
+                    <td>{{ stock["datetime"] }}</td>
+                    <td>{{ stock["shares"] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

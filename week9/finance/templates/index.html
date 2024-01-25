@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="../static/styles.css">
+    <div style="display: flex; gap: 1rem;">
+        <table>
+            <tr>
+                <th>Stocks Owned</th>
+                <th>Shares Owned</th>
+                <th>Current Price</th>
+                <th>Total Value</th>
+            </tr>
+            {% for stock in stocks_info %}
+                <tr>
+                    <td>{{ stock["stocks_owned"] }}</td>
+                    <td>{{ stock["shares_owned"] }}</td>
+                    <td>{{ stock["company"] | usd }}</td>
+                    <td>{{ stock["total_value"] | usd }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <table>
+            <tr>
+                <th>Cash Balance</th>
+                <th>Grand Total</th>
+            </tr>
+            <tr>
+                <td>{{ cash_balance | usd }}</td>
+                <td>{{ grand_total | usd}}</td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}
