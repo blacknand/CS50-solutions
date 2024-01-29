@@ -17,3 +17,4 @@ for i in range(size):
         else:
             print("#", end='')
     print()
+

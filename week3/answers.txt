@@ -9,3 +9,4 @@ How do you know?: consistently the quickest across all of the files
 sort3 uses: selection
 
 How do you know?: has a runtime complexity of theta n2 and sort3 was typically slowest
+
