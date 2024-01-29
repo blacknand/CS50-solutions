@@ -46,7 +46,7 @@ typedef struct
 BITMAPINFOHEADER;
 
 // The RGBTRIPLE structure describes a color consisting of relative intensities of
-// red, green, and blue. Adapted from http://msdn.microsoft.com/en-us/library/aa922590.aspx.
+// red, green and blue. Adapted from http://msdn.microsoft.com/en-us/library/aa922590.aspx.
 
 typedef struct
 {
