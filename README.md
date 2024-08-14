@@ -1,3 +1,3 @@
-# If you are doing CS50x, please do **NOT** copy the code
-This repository is **not in violation** of the academic honesty policy, however copying the solutions are. Please [read this thread](https://www.reddit.com/r/cs50/comments/b25gq1/so_is_it_okay_to_post_all_the_solutions_for_cs50/)
+# CS50x 2024 solutions
+My CS50 solutions from the 2024x class. Includes all problems sets, solutions to labs and some other code I write to practice certian concepts as well as code examples from the lectures and CS50 videos
 
